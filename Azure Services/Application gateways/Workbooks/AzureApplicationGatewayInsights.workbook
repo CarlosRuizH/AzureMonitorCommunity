@@ -96,7 +96,7 @@
             "type": 4,
             "isRequired": true,
             "value": {
-              "durationMs": 1209600000
+              "durationMs": 7776000000
             },
             "typeSettings": {
               "selectableValues": [
@@ -194,12 +194,12 @@
             },
             "timeContextFromParameter": "TimeRange",
             "queryType": 0,
-            "resourceType": "microsoft.resourcegraph/resources"
+            "resourceType": "microsoft.operationalinsights/workspaces"
           }
         ],
         "style": "pills",
         "queryType": 0,
-        "resourceType": "microsoft.resourcegraph/resources"
+        "resourceType": "microsoft.operationalinsights/workspaces"
       },
       "name": "Parameters"
     },
@@ -276,8 +276,7 @@
                   },
                   "defaultValue": "value::1",
                   "queryType": 0,
-                  "resourceType": "microsoft.operationalinsights/workspaces",
-                  "value": null
+                  "resourceType": "microsoft.operationalinsights/workspaces"
                 },
                 {
                   "id": "bf61516d-c629-4942-add5-75547b89b6cc",
@@ -301,8 +300,7 @@
                   },
                   "defaultValue": "value::1",
                   "queryType": 0,
-                  "resourceType": "microsoft.operationalinsights/workspaces",
-                  "value": null
+                  "resourceType": "microsoft.operationalinsights/workspaces"
                 }
               ],
               "style": "pills",
@@ -331,14 +329,6 @@
                   "linkTarget": "parameter",
                   "linkLabel": "Access Log",
                   "subTarget": "ApplicationGatewayAccessLog",
-                  "style": "link"
-                },
-                {
-                  "id": "231de103-7ab4-4049-8305-da7bdede4271",
-                  "cellValue": "selectedTab",
-                  "linkTarget": "parameter",
-                  "linkLabel": "Performance Log",
-                  "subTarget": "ApplicationGatewayPerformanceLog",
                   "style": "link"
                 }
               ]
@@ -796,9 +786,6 @@
                           "title": "Count of blocked requests by rule Id",
                           "noDataMessage": "No blocked requests matching the specified criteria",
                           "noDataMessageStyle": 3,
-                          "timeContext": {
-                            "durationMs": 1209600000
-                          },
                           "timeContextFromParameter": "TimeRange",
                           "queryType": 0,
                           "resourceType": "microsoft.operationalinsights/workspaces",
@@ -824,9 +811,6 @@
                           "title": "Top 50 blocked requests by rule name ",
                           "noDataMessage": "No blocked requests matching the specified criteria",
                           "noDataMessageStyle": 3,
-                          "timeContext": {
-                            "durationMs": 1209600000
-                          },
                           "timeContextFromParameter": "TimeRange",
                           "queryType": 0,
                           "resourceType": "microsoft.operationalinsights/workspaces",
@@ -859,9 +843,6 @@
                           "title": "Blocked requests by request type and object",
                           "noDataMessage": "No blocked requests matching the specified criteria",
                           "noDataMessageStyle": 3,
-                          "timeContext": {
-                            "durationMs": 1209600000
-                          },
                           "timeContextFromParameter": "TimeRange",
                           "exportedParameters": [
                             {
@@ -941,9 +922,6 @@
                           "title": "Details for requests with Request Type == '{p_requestType}' and Request Object == '{p_object}'. Click on the 'Request Object' column for more details.",
                           "noDataMessage": "No blocked requests matching the specified criteria",
                           "noDataMessageStyle": 3,
-                          "timeContext": {
-                            "durationMs": 0
-                          },
                           "timeContextFromParameter": "TimeRange",
                           "queryType": 0,
                           "resourceType": "microsoft.operationalinsights/workspaces",
@@ -1114,9 +1092,6 @@
                           "title": "Count of detected requests by rule Id",
                           "noDataMessage": "No detected requests matching the specified criteria",
                           "noDataMessageStyle": 3,
-                          "timeContext": {
-                            "durationMs": 1209600000
-                          },
                           "timeContextFromParameter": "TimeRange",
                           "queryType": 0,
                           "resourceType": "microsoft.operationalinsights/workspaces",
@@ -1142,9 +1117,6 @@
                           "title": "Top 50 detected requests by rule name ",
                           "noDataMessage": "No detected requests matching the specified criteria",
                           "noDataMessageStyle": 3,
-                          "timeContext": {
-                            "durationMs": 1209600000
-                          },
                           "timeContextFromParameter": "TimeRange",
                           "queryType": 0,
                           "resourceType": "microsoft.operationalinsights/workspaces",
@@ -1177,9 +1149,6 @@
                           "title": "Detected requests by request type and object",
                           "noDataMessage": "No detected requests matching the specified criteria",
                           "noDataMessageStyle": 3,
-                          "timeContext": {
-                            "durationMs": 1209600000
-                          },
                           "timeContextFromParameter": "TimeRange",
                           "exportedParameters": [
                             {
@@ -1259,9 +1228,6 @@
                           "title": "Details for requests with Request Type == '{p_requestType}' and Request Object == '{p_object}'. Click on the 'Request Object' column for more details.",
                           "noDataMessage": "No detected requests matching the specified criteria",
                           "noDataMessageStyle": 3,
-                          "timeContext": {
-                            "durationMs": 0
-                          },
                           "timeContextFromParameter": "TimeRange",
                           "queryType": 0,
                           "resourceType": "microsoft.operationalinsights/workspaces",
@@ -1432,9 +1398,6 @@
                           "title": "Count of matched requests by rule Id",
                           "noDataMessage": "No matched requests matching the specified criteria",
                           "noDataMessageStyle": 3,
-                          "timeContext": {
-                            "durationMs": 1209600000
-                          },
                           "timeContextFromParameter": "TimeRange",
                           "queryType": 0,
                           "resourceType": "microsoft.operationalinsights/workspaces",
@@ -1460,9 +1423,6 @@
                           "title": "Top 50 matched requests by rule name ",
                           "noDataMessage": "No matched requests matching the specified criteria",
                           "noDataMessageStyle": 3,
-                          "timeContext": {
-                            "durationMs": 1209600000
-                          },
                           "timeContextFromParameter": "TimeRange",
                           "queryType": 0,
                           "resourceType": "microsoft.operationalinsights/workspaces",
@@ -1495,9 +1455,6 @@
                           "title": "Matched requests by request type and object",
                           "noDataMessage": "No matched requests matching the specified criteria",
                           "noDataMessageStyle": 3,
-                          "timeContext": {
-                            "durationMs": 0
-                          },
                           "timeContextFromParameter": "TimeRange",
                           "exportedParameters": [
                             {
@@ -1577,9 +1534,6 @@
                           "title": "Details for requests with Request Type == '{p_requestType}' and Request Object == '{p_object}'. Click on the 'Request Object' column for more details.",
                           "noDataMessage": "No matched requests matching the specified criteria",
                           "noDataMessageStyle": 3,
-                          "timeContext": {
-                            "durationMs": 0
-                          },
                           "timeContextFromParameter": "TimeRange",
                           "queryType": 0,
                           "resourceType": "microsoft.operationalinsights/workspaces",
@@ -1809,7 +1763,10 @@
                         "timeContextFromParameter": "TimeRange",
                         "defaultValue": "value::all",
                         "queryType": 0,
-                        "resourceType": "microsoft.operationalinsights/workspaces"
+                        "resourceType": "microsoft.operationalinsights/workspaces",
+                        "value": [
+                          ""
+                        ]
                       }
                     ],
                     "style": "pills",
